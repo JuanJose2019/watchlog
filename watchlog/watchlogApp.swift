@@ -10,9 +10,10 @@ import SwiftData
 
 @main
 struct watchlogApp: App {
-    var sharedModelContainer: ModelContainer = {
+    var shared_container: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            PeliculaLocal.self,
+            FavoritoLocal.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -27,6 +28,6 @@ struct watchlogApp: App {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(sharedModelContainer)
+        .modelContainer(shared_container)
     }
 }
