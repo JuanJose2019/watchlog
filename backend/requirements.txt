@@ -1,0 +1,14 @@
+Flask
+Flask-SQLAlchemy
+mysqlclient
+python-dotenv
+Flask-Bcrypt
+bcrypt
+marshmallow
+Flask-Marshmallow
+Flask-JWT-Extended
+Flask-Limiter
+flask-smorest
+apispec
+marshmallow-sqlalchemy
+Flask-Cors

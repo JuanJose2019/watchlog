@@ -9,15 +9,16 @@ class FavoritesViewModel: ObservableObject {
     func syncFavoritesWithServer(context: ModelContext) {
         is_loading = true
         
-        Task {
-            // Aquí llamarías a APIManager.shared.getFavorites()
-            try? await Task.sleep(nanoseconds: 1_000_000_000)
-            
-            
-            self.is_loading = false
-            print("Favoritos sincronizados correctamente con el backend de MySQL")
-            // Aquí actualizarías el context de SwiftData con los datos devueltos por el servidor
-        
+                Task {
+            do {
+                let api_favs = try await APIManager.shared.getFavorites()
+                
+                // Actualizaríamos el contexto local con los remotos
+                self.is_loading = false
+                print("Favoritos sincronizados: \(api_favs.count)")
+            } catch {
+                self.is_loading = false
+                print("Error al sincronizar favoritos: \(error)")
+            }
         }
-    }
 }

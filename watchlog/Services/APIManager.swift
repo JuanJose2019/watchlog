@@ -89,6 +89,39 @@ class APIManager {
         }
     }
     
+
+    // MARK: - Favoritos
+    
+    func getFavorites() async throws -> [MovieResponse] {
+        if APIConfig.use_real_api {
+            return try await request(endpoint: "/favorites", method: "GET")
+        } else {
+            try await Task.sleep(nanoseconds: 1_000_000_000)
+            return []
+        }
+    }
+    
+    func addFavorite(api_id: Int, title: String, poster_url: String) async throws -> Bool {
+        if APIConfig.use_real_api {
+            let body: [String: Any] = ["api_id": api_id, "title": title, "poster_url": poster_url]
+            let _: [String: Any] = try await request(endpoint: "/favorites/", method: "POST", body: body)
+            return true
+        } else {
+            try await Task.sleep(nanoseconds: 500_000_000)
+            return true
+        }
+    }
+    
+    func removeFavorite(api_id: Int) async throws -> Bool {
+        if APIConfig.use_real_api {
+            let _: [String: Any] = try await request(endpoint: "/favorites/\(api_id)", method: "DELETE")
+            return true
+        } else {
+            try await Task.sleep(nanoseconds: 500_000_000)
+            return true
+        }
+    }
+
     // MARK: - Endpoints para los ViewModels
     
     func login(email: String, pass: String) async throws -> LoginResponse {
