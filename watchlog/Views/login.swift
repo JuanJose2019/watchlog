@@ -9,6 +9,7 @@ struct LoginView: View {
         NavigationStack {
             ZStack {
                 Color.black.ignoresSafeArea()
+<<<<<<< HEAD
                 
                 VStack(spacing: 25) {
                     // Logo y Título
@@ -74,6 +75,21 @@ struct LoginView: View {
                     NavigationLink(destination: RecoveryView()) {
                         Text("¿Olvidaste tu contraseña?")
                             .font(.footnote)
+=======
+            
+            VStack(spacing: 25) {
+                // Logo y Título
+                HStack {
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(Color(white: 0.8))
+                        .frame(width: 60, height: 60)
+                    VStack(alignment: .leading) {
+                        Text("CINEINFO")
+                            .font(.system(size: 28, weight: .bold))
+                            .foregroundColor(.white)
+                        Text("SV")
+                            .font(.caption)
+>>>>>>> main
                             .foregroundColor(.gray)
                     }
                     

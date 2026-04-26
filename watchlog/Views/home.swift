@@ -13,7 +13,7 @@ struct HomeView: View {
                     HStack {
                         Image(systemName: "line.horizontal.3").foregroundColor(.white)
                         Spacer()
-                        Text("MOVIEPLAY").font(.headline).foregroundColor(.white)
+                        Text("CINEINFO").font(.headline).foregroundColor(.white)
                         Spacer()
                         Image(systemName: "magnifyingglass").foregroundColor(.white)
                         NavigationLink(destination: FavoritesView()) {
