@@ -21,4 +21,5 @@ class FavoritesViewModel: ObservableObject {
                 print("Error al sincronizar favoritos: \(error)")
             }
         }
+    }
 }

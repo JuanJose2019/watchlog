@@ -1,0 +1,236 @@
+
+Showing Recent Errors Only
+
+Build target cineinfo of project cineinfo with configuration Debug
+
+SwiftEmitModule normal x86_64 Emitting\ module\ for\ cineinfo (in target 'cineinfo' from project 'cineinfo')
+    cd /Users/juan/Documents/watchlog
+    builtin-swiftTaskExecution -- /Users/juan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend -emit-module -experimental-skip-non-inlinable-function-bodies-without-types /Users/juan/Documents/watchlog/watchlog/Models/LocalModels.swift /Users/juan/Documents/watchlog/watchlog/Services/APIManager.swift /Users/juan/Documents/watchlog/watchlog/ViewModels/FavoritesViewModel.swift /Users/juan/Documents/watchlog/watchlog/ViewModels/HomeViewModel.swift /Users/juan/Documents/watchlog/watchlog/ViewModels/LoginViewModel.swift /Users/juan/Documents/watchlog/watchlog/ViewModels/MovieDetailViewModel.swift /Users/juan/Documents/watchlog/watchlog/ViewModels/RecoveryViewModel.swift /Users/juan/Documents/watchlog/watchlog/ViewModels/RegisterViewModel.swift /Users/juan/Documents/watchlog/watchlog/ViewModels/SettingsViewModel.swift /Users/juan/Documents/watchlog/watchlog/Views/Favorites.swift /Users/juan/Documents/watchlog/watchlog/Views/home.swift /Users/juan/Documents/watchlog/watchlog/Views/login.swift /Users/juan/Documents/watchlog/watchlog/Views/MovieDetail.swift /Users/juan/Documents/watchlog/watchlog/Views/recovery.swift /Users/juan/Documents/watchlog/watchlog/Views/register.swift /Users/juan/Documents/watchlog/watchlog/Views/Settings.swift /Users/juan/Documents/watchlog/watchlog/ContentView.swift /Users/juan/Documents/watchlog/watchlog/watchlogApp.swift /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/DerivedSources/GeneratedAssetSymbols.swift -target x86_64-apple-ios18.2-simulator -enable-objc-interop -sdk /Users/juan/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.2.sdk -I /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Products/Debug-iphonesimulator -F /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Products/Debug-iphonesimulator -no-color-diagnostics -enable-testing -g -debug-info-format\=dwarf -dwarf-version\=5 -module-cache-path /Users/juan/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -profile-generate -profile-coverage-mapping -swift-version 5 -enforce-exclusivity\=checked -Onone -D DEBUG -serialize-debugging-options -const-gather-protocols-file /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/cineinfo_const_extract_protocols.json -enable-experimental-feature DebugDescriptionMacro -enable-experimental-feature OpaqueTypeErasure -enable-bare-slash-regex -empty-abi-descriptor -validate-clang-modules-once -clang-build-session-file /Users/juan/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -working-directory -Xcc /Users/juan/Documents/watchlog -resource-dir /Users/juan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift -enable-anonymous-context-mangled-names -file-compilation-dir /Users/juan/Documents/watchlog -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -Xcc -ivfsstatcache -Xcc /Users/juan/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator18.2-22C146-a2d63c3475009b4260d6e3609cbec0b5.sdkstatcache -Xcc -I/Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/swift-overrides.hmap -Xcc -iquote -Xcc /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/cineinfo-generated-files.hmap -Xcc -I/Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/cineinfo-own-target-headers.hmap -Xcc -I/Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/cineinfo-all-target-headers.hmap -Xcc -iquote -Xcc /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/cineinfo-project-headers.hmap -Xcc -I/Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/DerivedSources-normal/x86_64 -Xcc -I/Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/DerivedSources/x86_64 -Xcc -I/Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/DerivedSources -Xcc -DDEBUG\=1 -module-name cineinfo -frontend-parseable-output -disable-clang-spi -target-sdk-version 18.2 -target-sdk-name iphonesimulator18.2 -external-plugin-path /Users/juan/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins\#/Users/juan/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server -external-plugin-path /Users/juan/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/local/lib/swift/host/plugins\#/Users/juan/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server -plugin-path /Users/juan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins -plugin-path /Users/juan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/local/lib/swift/host/plugins -emit-module-doc-path /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/cineinfo.swiftdoc -emit-module-source-info-path /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/cineinfo.swiftsourceinfo -emit-objc-header-path /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/cineinfo-Swift.h -serialize-diagnostics-path /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/cineinfo-master-emit-module.dia -emit-dependencies-path /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/cineinfo-master-emit-module.d -o /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/cineinfo.swiftmodule -emit-abi-descriptor-path /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/cineinfo.abi.json
+
+EmitSwiftModule normal x86_64 (in target 'cineinfo' from project 'cineinfo')
+    cd /Users/juan/Documents/watchlog
+    /Users/juan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -emit-module -experimental-skip-non-inlinable-function-bodies-without-types /Users/juan/Documents/watchlog/watchlog/Models/LocalModels.swift /Users/juan/Documents/watchlog/watchlog/Services/APIManager.swift /Users/juan/Documents/watchlog/watchlog/ViewModels/FavoritesViewModel.swift /Users/juan/Documents/watchlog/watchlog/ViewModels/HomeViewModel.swift /Users/juan/Documents/watchlog/watchlog/ViewModels/LoginViewModel.swift /Users/juan/Documents/watchlog/watchlog/ViewModels/MovieDetailViewModel.swift /Users/juan/Documents/watchlog/watchlog/ViewModels/RecoveryViewModel.swift /Users/juan/Documents/watchlog/watchlog/ViewModels/RegisterViewModel.swift /Users/juan/Documents/watchlog/watchlog/ViewModels/SettingsViewModel.swift /Users/juan/Documents/watchlog/watchlog/Views/Favorites.swift /Users/juan/Documents/watchlog/watchlog/Views/home.swift /Users/juan/Documents/watchlog/watchlog/Views/login.swift /Users/juan/Documents/watchlog/watchlog/Views/MovieDetail.swift /Users/juan/Documents/watchlog/watchlog/Views/recovery.swift /Users/juan/Documents/watchlog/watchlog/Views/register.swift /Users/juan/Documents/watchlog/watchlog/Views/Settings.swift /Users/juan/Documents/watchlog/watchlog/ContentView.swift /Users/juan/Documents/watchlog/watchlog/watchlogApp.swift /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/DerivedSources/GeneratedAssetSymbols.swift -target x86_64-apple-ios18.2-simulator -enable-objc-interop -sdk /Users/juan/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.2.sdk -I /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Products/Debug-iphonesimulator -F /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Products/Debug-iphonesimulator -no-color-diagnostics -enable-testing -g -debug-info-format\=dwarf -dwarf-version\=5 -module-cache-path /Users/juan/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -profile-generate -profile-coverage-mapping -swift-version 5 -enforce-exclusivity\=checked -Onone -D DEBUG -serialize-debugging-options -const-gather-protocols-file /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/cineinfo_const_extract_protocols.json -enable-experimental-feature DebugDescriptionMacro -enable-experimental-feature OpaqueTypeErasure -enable-bare-slash-regex -empty-abi-descriptor -validate-clang-modules-once -clang-build-session-file /Users/juan/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -working-directory -Xcc /Users/juan/Documents/watchlog -resource-dir /Users/juan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift -enable-anonymous-context-mangled-names -file-compilation-dir /Users/juan/Documents/watchlog -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -Xcc -ivfsstatcache -Xcc /Users/juan/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator18.2-22C146-a2d63c3475009b4260d6e3609cbec0b5.sdkstatcache -Xcc -I/Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/swift-overrides.hmap -Xcc -iquote -Xcc /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/cineinfo-generated-files.hmap -Xcc -I/Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/cineinfo-own-target-headers.hmap -Xcc -I/Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/cineinfo-all-target-headers.hmap -Xcc -iquote -Xcc /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/cineinfo-project-headers.hmap -Xcc -I/Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/DerivedSources-normal/x86_64 -Xcc -I/Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/DerivedSources/x86_64 -Xcc -I/Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/DerivedSources -Xcc -DDEBUG\=1 -module-name cineinfo -frontend-parseable-output -disable-clang-spi -target-sdk-version 18.2 -target-sdk-name iphonesimulator18.2 -external-plugin-path /Users/juan/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins\#/Users/juan/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server -external-plugin-path /Users/juan/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/local/lib/swift/host/plugins\#/Users/juan/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server -plugin-path /Users/juan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins -plugin-path /Users/juan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/local/lib/swift/host/plugins -emit-module-doc-path /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/cineinfo.swiftdoc -emit-module-source-info-path /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/cineinfo.swiftsourceinfo -emit-objc-header-path /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/cineinfo-Swift.h -serialize-diagnostics-path /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/cineinfo-master-emit-module.dia -emit-dependencies-path /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/cineinfo-master-emit-module.d -o /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/cineinfo.swiftmodule -emit-abi-descriptor-path /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/cineinfo.abi.json
+
+/Users/juan/Documents/watchlog/watchlog/ViewModels/FavoritesViewModel.swift:6:5: error: expected declaration
+    @Published var is_loading = false
+    ^
+/Users/juan/Documents/watchlog/watchlog/ViewModels/FavoritesViewModel.swift:5:7: note: in declaration of 'FavoritesViewModel'
+class FavoritesViewModel: ObservableObject {
+      ^
+/Users/juan/Documents/watchlog/watchlog/ViewModels/FavoritesViewModel.swift:6:5: error: expected '}' in class
+    @Published var is_loading = false
+    ^
+/Users/juan/Documents/watchlog/watchlog/ViewModels/FavoritesViewModel.swift:5:44: note: to match this opening '{'
+class FavoritesViewModel: ObservableObject {
+                                           ^
+/Users/juan/Documents/watchlog/watchlog/Views/Favorites.swift:7:18: error: value of type 'FavoritoLocal' has no member 'fechaAgregado'
+    @Query(sort: \FavoritoLocal.fechaAgregado, order: .reverse) private var favoritos: [FavoritoLocal]
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/juan/Documents/watchlog/watchlog/Views/home.swift:2:6: error: unknown attribute 'StateObject'
+    @StateObject private var viewModel = HomeViewModel()
+     ^
+/Users/juan/Documents/watchlog/watchlog/Views/home.swift:2:42: error: call to main actor-isolated initializer 'init()' in a synchronous nonisolated context
+    @StateObject private var viewModel = HomeViewModel()
+                                         ^
+/Users/juan/Documents/watchlog/watchlog/ViewModels/HomeViewModel.swift:23:5: note: calls to initializer 'init()' from outside of its actor context are implicitly asynchronous
+    init() {
+    ^
+/Users/juan/Documents/watchlog/watchlog/Views/home.swift:3:20: error: cannot find 'GridItem' in scope
+    let columns = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
+                   ^~~~~~~~
+/Users/juan/Documents/watchlog/watchlog/Views/home.swift:3:43: error: cannot find 'GridItem' in scope
+    let columns = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
+                                          ^~~~~~~~
+/Users/juan/Documents/watchlog/watchlog/Views/home.swift:3:66: error: cannot find 'GridItem' in scope
+    let columns = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
+                                                                 ^~~~~~~~
+/Users/juan/Documents/watchlog/watchlog/Views/home.swift:3:30: error: cannot infer contextual base in reference to member 'flexible'
+    let columns = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
+                            ~^~~~~~~~
+/Users/juan/Documents/watchlog/watchlog/Views/home.swift:3:53: error: cannot infer contextual base in reference to member 'flexible'
+    let columns = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
+                                                   ~^~~~~~~~
+/Users/juan/Documents/watchlog/watchlog/Views/home.swift:3:76: error: cannot infer contextual base in reference to member 'flexible'
+    let columns = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
+                                                                          ~^~~~~~~~
+/Users/juan/Documents/watchlog/watchlog/Views/home.swift:5:20: error: cannot find type 'View' in scope
+    var body: some View {
+                   ^~~~
+/Users/juan/Documents/watchlog/watchlog/Views/home.swift:1:18: error: cannot find type 'View' in scope
+struct HomeView: View {
+                 ^~~~
+/Users/juan/Documents/watchlog/watchlog/Views/home.swift:72:20: error: cannot find type 'View' in scope
+    var body: some View {
+                   ^~~~
+/Users/juan/Documents/watchlog/watchlog/Views/home.swift:69:19: error: cannot find type 'View' in scope
+struct MovieCard: View {
+                  ^~~~
+/Users/juan/Documents/watchlog/watchlog/Views/recovery.swift:2:6: error: unknown attribute 'StateObject'
+    @StateObject private var viewModel = RecoveryViewModel()
+     ^
+/Users/juan/Documents/watchlog/watchlog/Views/recovery.swift:2:42: error: call to main actor-isolated initializer 'init()' in a synchronous nonisolated context
+    @StateObject private var viewModel = RecoveryViewModel()
+                                         ^
+/Users/juan/Documents/watchlog/watchlog/ViewModels/RecoveryViewModel.swift:4:7: note: calls to initializer 'init()' from outside of its actor context are implicitly asynchronous
+class RecoveryViewModel: ObservableObject {
+      ^
+/Users/juan/Documents/watchlog/watchlog/Views/recovery.swift:3:6: error: unknown attribute 'State'
+    @State private var email = ""
+     ^
+/Users/juan/Documents/watchlog/watchlog/Views/recovery.swift:5:20: error: cannot find type 'View' in scope
+    var body: some View {
+                   ^~~~
+/Users/juan/Documents/watchlog/watchlog/Views/recovery.swift:1:22: error: cannot find type 'View' in scope
+struct RecoveryView: View {
+                     ^~~~
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:2:6: error: unknown attribute 'StateObject'
+    @StateObject private var viewModel = RegisterViewModel()
+     ^
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:2:42: error: call to main actor-isolated initializer 'init()' in a synchronous nonisolated context
+    @StateObject private var viewModel = RegisterViewModel()
+                                         ^
+/Users/juan/Documents/watchlog/watchlog/ViewModels/RegisterViewModel.swift:4:7: note: calls to initializer 'init()' from outside of its actor context are implicitly asynchronous
+class RegisterViewModel: ObservableObject {
+      ^
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:3:6: error: unknown attribute 'State'
+    @State private var nombre = ""
+     ^
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:4:6: error: unknown attribute 'State'
+    @State private var email = ""
+     ^
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:5:6: error: unknown attribute 'State'
+    @State private var password = ""
+     ^
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:6:6: error: unknown attribute 'State'
+    @State private var fecha = ""
+     ^
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:8:20: error: cannot find type 'View' in scope
+    var body: some View {
+                   ^~~~
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:1:22: error: cannot find type 'View' in scope
+struct RegisterView: View {
+                     ^~~~
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:73:6: error: unknown attribute 'Binding'
+    @Binding var text: String
+     ^
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:77:20: error: cannot find type 'View' in scope
+    var body: some View {
+                   ^~~~
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:71:26: error: cannot find type 'View' in scope
+struct CustomInputField: View {
+                         ^~~~
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:95:41: error: cannot find type 'View' in scope
+    func body(content: Content) -> some View {
+                                        ^~~~
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:95:36: error: 'some' types are only permitted in properties, subscripts, and functions
+    func body(content: Content) -> some View {
+                                   ^
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:95:24: error: cannot find type 'Content' in scope
+    func body(content: Content) -> some View {
+                       ^~~~~~~
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:94:20: error: cannot find type 'ViewModifier' in scope
+struct InputStyle: ViewModifier {
+                   ^~~~~~~~~~~~
+@__swiftmacro_8cineinfo11ContentViewV5items33_4B6B153EB03E35B5E681222B0C743F4DLL5QueryfMp_.swift:1:43: error: cannot find type 'Item' in scope
+private(set) var _items: SwiftData.Query<[Item].Element, [Item]> = .init()
+                                          ^~~~
+/Users/juan/Documents/watchlog/watchlog/ContentView.swift:13:5: note: in expansion of macro 'Query' on property 'items' here
+    @Query private var items: [Item]
+    ^                  ~~~~~
+/Users/juan/Documents/watchlog/watchlog/ContentView.swift:13:5: note: in expansion of macro 'Query' on property 'items' here
+    @Query private var items: [Item]
+    ^                  ~~~~~
+/Users/juan/Documents/watchlog/watchlog/ContentView.swift:13:32: error: cannot find type 'Item' in scope
+    @Query private var items: [Item]
+                               ^~~~
+/Users/juan/Documents/watchlog/watchlog/ContentView.swift:60:30: error: cannot find 'Item' in scope
+        .modelContainer(for: Item.self, inMemory: true)
+                             ^~~~
+
+/Users/juan/Documents/watchlog/watchlog/ViewModels/FavoritesViewModel.swift:6:5: Expected declaration
+
+/Users/juan/Documents/watchlog/watchlog/ViewModels/FavoritesViewModel.swift:6:5: Expected '}' in class
+
+/Users/juan/Documents/watchlog/watchlog/Views/Favorites.swift:7:18: Value of type 'FavoritoLocal' has no member 'fechaAgregado'
+
+/Users/juan/Documents/watchlog/watchlog/Views/home.swift:2:6: Unknown attribute 'StateObject'
+
+/Users/juan/Documents/watchlog/watchlog/Views/home.swift:2:42: Call to main actor-isolated initializer 'init()' in a synchronous nonisolated context
+
+/Users/juan/Documents/watchlog/watchlog/Views/home.swift:3:20: Cannot find 'GridItem' in scope
+
+/Users/juan/Documents/watchlog/watchlog/Views/home.swift:3:43: Cannot find 'GridItem' in scope
+
+/Users/juan/Documents/watchlog/watchlog/Views/home.swift:3:66: Cannot find 'GridItem' in scope
+
+/Users/juan/Documents/watchlog/watchlog/Views/home.swift:3:30: Cannot infer contextual base in reference to member 'flexible'
+
+/Users/juan/Documents/watchlog/watchlog/Views/home.swift:3:53: Cannot infer contextual base in reference to member 'flexible'
+
+/Users/juan/Documents/watchlog/watchlog/Views/home.swift:3:76: Cannot infer contextual base in reference to member 'flexible'
+
+/Users/juan/Documents/watchlog/watchlog/Views/home.swift:5:20: Cannot find type 'View' in scope
+
+/Users/juan/Documents/watchlog/watchlog/Views/home.swift:1:18: Cannot find type 'View' in scope
+
+/Users/juan/Documents/watchlog/watchlog/Views/home.swift:72:20: Cannot find type 'View' in scope
+
+/Users/juan/Documents/watchlog/watchlog/Views/home.swift:69:19: Cannot find type 'View' in scope
+
+/Users/juan/Documents/watchlog/watchlog/Views/recovery.swift:2:6: Unknown attribute 'StateObject'
+
+/Users/juan/Documents/watchlog/watchlog/Views/recovery.swift:2:42: Call to main actor-isolated initializer 'init()' in a synchronous nonisolated context
+
+/Users/juan/Documents/watchlog/watchlog/Views/recovery.swift:3:6: Unknown attribute 'State'
+
+/Users/juan/Documents/watchlog/watchlog/Views/recovery.swift:5:20: Cannot find type 'View' in scope
+
+/Users/juan/Documents/watchlog/watchlog/Views/recovery.swift:1:22: Cannot find type 'View' in scope
+
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:2:6: Unknown attribute 'StateObject'
+
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:2:42: Call to main actor-isolated initializer 'init()' in a synchronous nonisolated context
+
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:3:6: Unknown attribute 'State'
+
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:4:6: Unknown attribute 'State'
+
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:5:6: Unknown attribute 'State'
+
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:6:6: Unknown attribute 'State'
+
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:8:20: Cannot find type 'View' in scope
+
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:1:22: Cannot find type 'View' in scope
+
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:73:6: Unknown attribute 'Binding'
+
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:77:20: Cannot find type 'View' in scope
+
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:71:26: Cannot find type 'View' in scope
+
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:95:41: Cannot find type 'View' in scope
+
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:95:36: 'some' types are only permitted in properties, subscripts, and functions
+
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:95:24: Cannot find type 'Content' in scope
+
+/Users/juan/Documents/watchlog/watchlog/Views/register.swift:94:20: Cannot find type 'ViewModifier' in scope
+
+/var/folders/tz/7z4rr12j2x1cdtvpz99jxgfc0000gn/T/swift-generated-sources/@__swiftmacro_8cineinfo11ContentViewV5items33_4B6B153EB03E35B5E681222B0C743F4DLL5QueryfMp_.swift:1:43: Cannot find type 'Item' in scope
+
+/Users/juan/Documents/watchlog/watchlog/ContentView.swift:13:32: Cannot find type 'Item' in scope
+
+/Users/juan/Documents/watchlog/watchlog/ContentView.swift:60:30: Cannot find 'Item' in scope
+
+SwiftCompile normal x86_64 Compiling\ login.swift,\ MovieDetail.swift /Users/juan/Documents/watchlog/watchlog/Views/login.swift /Users/juan/Documents/watchlog/watchlog/Views/MovieDetail.swift (in target 'cineinfo' from project 'cineinfo')
+    cd /Users/juan/Documents/watchlog
+    builtin-swiftTaskExecution -- /Users/juan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend -c /Users/juan/Documents/watchlog/watchlog/Models/LocalModels.swift /Users/juan/Documents/watchlog/watchlog/Services/APIManager.swift /Users/juan/Documents/watchlog/watchlog/ViewModels/FavoritesViewModel.swift /Users/juan/Documents/watchlog/watchlog/ViewModels/HomeViewModel.swift /Users/juan/Documents/watchlog/watchlog/ViewModels/LoginViewModel.swift /Users/juan/Documents/watchlog/watchlog/ViewModels/MovieDetailViewModel.swift /Users/juan/Documents/watchlog/watchlog/ViewModels/RecoveryViewModel.swift /Users/juan/Documents/watchlog/watchlog/ViewModels/RegisterViewModel.swift /Users/juan/Documents/watchlog/watchlog/ViewModels/SettingsViewModel.swift /Users/juan/Documents/watchlog/watchlog/Views/Favorites.swift /Users/juan/Documents/watchlog/watchlog/Views/home.swift -primary-file /Users/juan/Documents/watchlog/watchlog/Views/login.swift -primary-file /Users/juan/Documents/watchlog/watchlog/Views/MovieDetail.swift /Users/juan/Documents/watchlog/watchlog/Views/recovery.swift /Users/juan/Documents/watchlog/watchlog/Views/register.swift /Users/juan/Documents/watchlog/watchlog/Views/Settings.swift /Users/juan/Documents/watchlog/watchlog/ContentView.swift /Users/juan/Documents/watchlog/watchlog/watchlogApp.swift /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/DerivedSources/GeneratedAssetSymbols.swift -emit-dependencies-path /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/login.d -emit-const-values-path /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/login.swiftconstvalues -emit-reference-dependencies-path /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/login.swiftdeps -serialize-diagnostics-path /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/login.dia -emit-dependencies-path /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/MovieDetail.d -emit-const-values-path /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/MovieDetail.swiftconstvalues -emit-reference-dependencies-path /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/MovieDetail.swiftdeps -serialize-diagnostics-path /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/MovieDetail.dia -emit-localized-strings -emit-localized-strings-path /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64 -target x86_64-apple-ios18.2-simulator -enable-objc-interop -sdk /Users/juan/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.2.sdk -I /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Products/Debug-iphonesimulator -F /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Products/Debug-iphonesimulator -no-color-diagnostics -enable-testing -g -debug-info-format\=dwarf -dwarf-version\=5 -module-cache-path /Users/juan/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -profile-generate -profile-coverage-mapping -swift-version 5 -enforce-exclusivity\=checked -Onone -D DEBUG -serialize-debugging-options -const-gather-protocols-file /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/cineinfo_const_extract_protocols.json -enable-experimental-feature DebugDescriptionMacro -enable-experimental-feature OpaqueTypeErasure -enable-bare-slash-regex -empty-abi-descriptor -validate-clang-modules-once -clang-build-session-file /Users/juan/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -working-directory -Xcc /Users/juan/Documents/watchlog -resource-dir /Users/juan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift -enable-anonymous-context-mangled-names -file-compilation-dir /Users/juan/Documents/watchlog -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -Xcc -ivfsstatcache -Xcc /Users/juan/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator18.2-22C146-a2d63c3475009b4260d6e3609cbec0b5.sdkstatcache -Xcc -I/Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/swift-overrides.hmap -Xcc -iquote -Xcc /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/cineinfo-generated-files.hmap -Xcc -I/Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/cineinfo-own-target-headers.hmap -Xcc -I/Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/cineinfo-all-target-headers.hmap -Xcc -iquote -Xcc /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/cineinfo-project-headers.hmap -Xcc -I/Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/DerivedSources-normal/x86_64 -Xcc -I/Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/DerivedSources/x86_64 -Xcc -I/Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/DerivedSources -Xcc -DDEBUG\=1 -module-name cineinfo -frontend-parseable-output -disable-clang-spi -target-sdk-version 18.2 -target-sdk-name iphonesimulator18.2 -external-plugin-path /Users/juan/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins\#/Users/juan/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server -external-plugin-path /Users/juan/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/local/lib/swift/host/plugins\#/Users/juan/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server -plugin-path /Users/juan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins -plugin-path /Users/juan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/local/lib/swift/host/plugins -o /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/login.o -o /Users/juan/Library/Developer/Xcode/DerivedData/watchlog-eldrrkmfsoicxxfctgflkbolvwzl/Build/Intermediates.noindex/cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/MovieDetail.o -index-unit-output-path /cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/login.o -index-unit-output-path /cineinfo.build/Debug-iphonesimulator/cineinfo.build/Objects-normal/x86_64/MovieDetail.o -index-store-path /Users/juan/Library/Developer/Xcode/DerivedData/cineinfo-bydsbpruwqzcwcgpqrhxxprkapxn/Index.noindex/DataStore -index-system-modules
+
+Command SwiftCompile failed with a nonzero exit code
+
+Command SwiftCompile failed with a nonzero exit code
+
+
+
+Build failed    25/4/26, 6:00 PM    31.9 seconds

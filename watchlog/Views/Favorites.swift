@@ -4,7 +4,7 @@ import SwiftData
 struct FavoritesView: View {
     @Environment(\.modelContext) private var modelContext
     // Consultamos la base de datos local usando SwiftData (Tabla 4)
-    @Query(sort: \FavoritoLocal.fechaAgregado, order: .reverse) private var favoritos: [FavoritoLocal]
+    @Query(sort: \FavoritoLocal.fecha_agregado, order: .reverse) private var favoritos: [FavoritoLocal]
     @StateObject private var viewModel = FavoritesViewModel()
     
     let columns = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
@@ -29,9 +29,9 @@ struct FavoritesView: View {
                             ForEach(favoritos) { fav in
                                 if let pelicula = fav.pelicula {
                                     NavigationLink(destination: MovieDetailView(
-                                        movieTitle: pelicula.titulo,
-                                        movieId: pelicula.idPelicula,
-                                        posterUrl: pelicula.posterPath,
+                                        movie_title: pelicula.titulo,
+                                        movie_id: pelicula.id_pelicula,
+                                        poster_url: pelicula.poster_path,
                                         quality: pelicula.calidad
                                     )) {
                                         FavoriteCard(pelicula: pelicula)
