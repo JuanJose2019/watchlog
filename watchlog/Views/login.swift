@@ -9,7 +9,6 @@ struct LoginView: View {
         NavigationStack {
             ZStack {
                 Color.black.ignoresSafeArea()
-<<<<<<< HEAD
                 
                 VStack(spacing: 25) {
                     // Logo y Título
@@ -18,10 +17,10 @@ struct LoginView: View {
                             .fill(Color(white: 0.8))
                             .frame(width: 60, height: 60)
                         VStack(alignment: .leading) {
-                            Text("MOVIEPLAY")
+                            Text("CINEINFO")
                                 .font(.system(size: 28, weight: .bold))
                                 .foregroundColor(.white)
-                            Text("S V")
+                            Text("SV")
                                 .font(.caption)
                                 .foregroundColor(.gray)
                         }
@@ -45,7 +44,7 @@ struct LoginView: View {
                             .padding()
                             .background(Color(red: 0.95, green: 0.92, blue: 0.88))
                             .cornerRadius(10)
-                        
+                            
                         if let error = viewModel.error_msg {
                             Text(error)
                                 .foregroundColor(.red)
@@ -75,21 +74,6 @@ struct LoginView: View {
                     NavigationLink(destination: RecoveryView()) {
                         Text("¿Olvidaste tu contraseña?")
                             .font(.footnote)
-=======
-            
-            VStack(spacing: 25) {
-                // Logo y Título
-                HStack {
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(Color(white: 0.8))
-                        .frame(width: 60, height: 60)
-                    VStack(alignment: .leading) {
-                        Text("CINEINFO")
-                            .font(.system(size: 28, weight: .bold))
-                            .foregroundColor(.white)
-                        Text("SV")
-                            .font(.caption)
->>>>>>> main
                             .foregroundColor(.gray)
                     }
                     
