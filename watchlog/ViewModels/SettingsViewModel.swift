@@ -30,7 +30,7 @@ class SettingsViewModel: ObservableObject {
     }
     
     func openHelpCenter() {
-        if let url = URL(string: "https://movieplay.sv/help") {
+        if let url = URL(string: "https://cineinfo.sv/help") {
             // Lógica para abrir safari o soporte
             print("Abriendo centro de ayuda...")
         }

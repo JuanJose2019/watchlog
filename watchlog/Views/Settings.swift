@@ -55,7 +55,7 @@ struct SettingsView: View {
                         }
                         .padding(.horizontal)
                         
-                        Text("MoviePlay SV v\(viewModel.app_version)")
+                        Text("CineInfo SV v\(viewModel.app_version)")
                             .font(.caption2)
                             .foregroundColor(.gray)
                             .frame(maxWidth: .infinity)

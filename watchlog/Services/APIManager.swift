@@ -7,7 +7,7 @@ struct APIConfig {
     static let base_url = "http://192.168.1.2:5000/api"
     
     // Cambia esto a `true` cuando quieras que la app intente conectarse al servidor Flask real.
-    // Mientras sea `false`, devolverá respuestas simuladas para que puedas probar la UI.
+    // Mientras sea `false`, devolverá r1921espuestas simuladas para que puedas probar la UI.
     static let use_real_api = true
 }
 

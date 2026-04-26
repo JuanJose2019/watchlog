@@ -17,10 +17,10 @@ struct LoginView: View {
                         .fill(Color(white: 0.8))
                         .frame(width: 60, height: 60)
                     VStack(alignment: .leading) {
-                        Text("MOVIEPLAY")
+                        Text("CINEINFO")
                             .font(.system(size: 28, weight: .bold))
                             .foregroundColor(.white)
-                        Text("S V")
+                        Text("SV")
                             .font(.caption)
                             .foregroundColor(.gray)
                     }
