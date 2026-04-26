@@ -4,11 +4,11 @@ import Foundation
 struct APIConfig {
     // Configura aquí la URL de tu servidor Flask cuando esté listo para producción.
     // Ejemplos: "http://127.0.0.1:5000/api", "http://192.168.1.50:5000/api", "https://miservidor.com/api"
-    static let base_url = "http://127.0.0.1:5000/api"
+    static let base_url = "http://192.168.1.2:5000/api"
     
     // Cambia esto a `true` cuando quieras que la app intente conectarse al servidor Flask real.
     // Mientras sea `false`, devolverá respuestas simuladas para que puedas probar la UI.
-    static let use_real_api = false
+    static let use_real_api = true
 }
 
 // MARK: - Modelos de Datos (Respuestas del Servidor Flask)

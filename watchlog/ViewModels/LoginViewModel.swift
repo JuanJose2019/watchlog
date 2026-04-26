@@ -5,6 +5,7 @@ class LoginViewModel: ObservableObject {
     // Estas propiedades se vinculan directamente a tus @State mediante lógica de negocio
     @Published var is_loading = false
     @Published var error_msg: String?
+    @Published var is_logged_in = false
     
     // Función para el botón "Iniciar sesión"
     func login(email: String, pass: String) {
@@ -28,6 +29,7 @@ class LoginViewModel: ObservableObject {
                 if let refresh = response.refresh_token {
                     UserDefaults.standard.set(refresh, forKey: "refresh_token")
                 }
+                self.is_logged_in = true
             
             } catch {
                 

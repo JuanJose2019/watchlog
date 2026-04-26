@@ -1,6 +1,7 @@
 import SwiftUI
 struct RecoveryView: View {
     @StateObject private var viewModel = RecoveryViewModel()
+    @Environment(\.dismiss) var dismiss
     @State private var email = ""
     
     var body: some View {
@@ -42,7 +43,7 @@ struct RecoveryView: View {
                 }
                 .padding(.horizontal, 40)
                 
-                Button(action: { viewModel.backToLogin() }) {
+                Button(action: { dismiss() }) {
                     Text("Iniciar sesión")
                         .padding()
                         .frame(maxWidth: .infinity)
@@ -68,5 +69,6 @@ struct RecoveryView: View {
                 Spacer()
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }

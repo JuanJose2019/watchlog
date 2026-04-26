@@ -6,8 +6,9 @@ struct LoginView: View {
     @State private var password = ""
     
     var body: some View {
-        ZStack {
-            Color.black.ignoresSafeArea()
+        NavigationStack {
+            ZStack {
+                Color.black.ignoresSafeArea()
             
             VStack(spacing: 25) {
                 // Logo y Título
@@ -70,14 +71,26 @@ struct LoginView: View {
                 }
                 .padding(.horizontal, 30)
                 
-                Button(action: { viewModel.recoverPassword(for: email) }) {
+                NavigationLink(destination: RecoveryView()) {
                     Text("¿Olvidaste tu contraseña?")
                         .font(.footnote)
                         .foregroundColor(.gray)
                 }
                 
+                NavigationLink(destination: RegisterView()) {
+                    Text("¿No tienes cuenta? Regístrate")
+                        .font(.footnote)
+                        .foregroundColor(.white)
+                        .underline()
+                }
+                .padding(.top, 10)
+                
                 Spacer()
             }
+        }
+        .navigationDestination(isPresented: $viewModel.is_logged_in) {
+            HomeView()
+                .navigationBarBackButtonHidden(true)
         }
     }
 }

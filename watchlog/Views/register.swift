@@ -1,6 +1,7 @@
 import SwiftUI
 struct RegisterView: View {
     @StateObject private var viewModel = RegisterViewModel()
+    @Environment(\.dismiss) var dismiss
     @State private var nombre = ""
     @State private var email = ""
     @State private var password = ""
@@ -20,7 +21,7 @@ struct RegisterView: View {
                 HStack {
                     Text("¿Ya te has registrado?")
                         .foregroundColor(.gray)
-                    Button(action: { viewModel.goToLogin() }) {
+                    Button(action: { dismiss() }) {
                         Text("Ingresar")
                             .foregroundColor(.white)
                             .underline()
@@ -65,6 +66,12 @@ struct RegisterView: View {
                 .padding(.bottom, 30)
             }
         }
+        .onChange(of: viewModel.is_registered) { newValue in
+            if newValue {
+                dismiss()
+            }
+        }
+        .navigationBarBackButtonHidden(true)
     }
 }
 

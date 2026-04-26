@@ -4,6 +4,7 @@ import Foundation
 class RegisterViewModel: ObservableObject {
     @Published var is_loading = false
     @Published var reg_error: String?
+    @Published var is_registered = false
     
     // Función principal para el botón REGISTRATE
     func registerUser(nombre: String, email: String, pass: String, fecha: String) {
@@ -23,8 +24,7 @@ class RegisterViewModel: ObservableObject {
                 self.is_loading = false
                 if response.success {
                     print("Usuario registrado exitosamente: \(nombre)")
-                    // Navegar a login
-                    self.goToLogin()
+                    self.is_registered = true
                 } else {
                     self.reg_error = response.message
                 }
