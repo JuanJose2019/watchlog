@@ -143,7 +143,7 @@ struct ToggleRow: View {
             Text(title)
                 .foregroundColor(.white)
             Spacer()
-            Toggle("", is_on: $is_on)
+            Toggle("", isOn: $is_on)
                 .toggleStyle(SwitchToggleStyle(tint: Color(red: 0.72, green: 0.84, blue: 0.78)))
         }
     }

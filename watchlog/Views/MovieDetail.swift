@@ -5,9 +5,9 @@ struct MovieDetailView: View {
     @Environment(\.modelContext) private var modelContext
     @StateObject private var viewModel = MovieDetailViewModel()
     
-    var movieTitle: String
-    var movieId: String
-    var posterUrl: String
+    var movie_title: String
+    var movie_id: String
+    var poster_url: String
     var quality: String
     
     var body: some View {
@@ -19,7 +19,7 @@ struct MovieDetailView: View {
                         .fill(Color.gray.opacity(0.3))
                         .aspectRatio(2/3, contentMode: .fit)
                         .overlay(
-                            Text(movieTitle)
+                            Text(movie_title)
                                 .font(.largeTitle)
                                 .fontWeight(.bold)
                                 .foregroundColor(.white)
@@ -38,7 +38,7 @@ struct MovieDetailView: View {
                 // Información de la película
                 VStack(alignment: .leading, spacing: 10) {
                     HStack {
-                        Text(movieTitle)
+                        Text(movie_title)
                             .font(.title)
                             .bold()
                             .foregroundColor(.white)
@@ -48,22 +48,22 @@ struct MovieDetailView: View {
                         Button(action: {
                             // Instanciamos el modelo local para pasarlo a SwiftData
                             let tempMovie = PeliculaLocal(
-                                idPelicula: movieId,
-                                titulo: movieTitle,
+                                id_pelicula: movie_id,
+                                titulo: movie_title,
                                 descripcion: "Descripción descargada desde TMDB.",
-                                posterPath: posterUrl,
-                                apiId: 0, // Aquí iría el ID real de TMDB
-                                fechaEstreno: "2024-01-01",
+                                poster_path: poster_url,
+                                api_id: Int(movie_id) ?? 0, // Aquí iría el ID real de TMDB
+                                fecha_estreno: "2024-01-01",
                                 calidad: quality,
                                 categoria: "PELICULAS"
                             )
                             viewModel.toggleFavorite(movie: tempMovie, context: modelContext)
                         }) {
-                            if viewModel.isLoading {
+                            if viewModel.is_loading {
                                 ProgressView().progressViewStyle(CircularProgressViewStyle(tint: .red))
                             } else {
-                                Image(systemName: viewModel.isFavorite ? "heart.fill" : "heart")
-                                    .foregroundColor(viewModel.isFavorite ? .red : .white)
+                                Image(systemName: viewModel.is_fav ? "heart.fill" : "heart")
+                                    .foregroundColor(viewModel.is_fav ? .red : .white)
                                     .font(.title)
                             }
                         }
@@ -88,7 +88,7 @@ struct MovieDetailView: View {
         }
         .background(Color.black.ignoresSafeArea())
         .onAppear {
-            viewModel.checkFavoriteStatus(movieId: movieId, context: modelContext)
+            viewModel.checkFavoriteStatus(movie_id: movie_id, context: modelContext)
         }
         .navigationBarTitleDisplayMode(.inline)
     }

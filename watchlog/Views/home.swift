@@ -49,7 +49,7 @@ struct HomeView: View {
                                 ForEach(viewModel.movies) { movie in
                                     NavigationLink(destination: MovieDetailView(
                                         movie_title: movie.title,
-                                        movie_id: movie.id.uuidString,
+                                        movie_id: movie.id,
                                         poster_url: movie.poster_url,
                                         quality: movie.quality
                                     )) {

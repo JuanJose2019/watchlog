@@ -7,7 +7,7 @@ enum ContentCategory: String, CaseIterable {
 }
 
 struct MovieItem: Identifiable {
-    let id = UUID()
+    let id: String
     let title: String
     let poster_url: String
     let quality: String // HD, CAM, etc.
@@ -37,7 +37,7 @@ class HomeViewModel: ObservableObject {
             do {
                 let api_movies = try await APIManager.shared.fetchMovies(category: self.sel_category.rawValue)
                 
-                self.movies = api_movies.map { MovieItem(title: $0.title, poster_url: $0.poster_url, quality: $0.quality) }
+                self.movies = api_movies.map { MovieItem(id: $0.id, title: $0.title, poster_url: $0.poster_url, quality: $0.quality) }
                 self.is_loading = false
             
             } catch {
