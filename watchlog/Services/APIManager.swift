@@ -24,6 +24,10 @@ struct RegisterResponse: Codable {
     let message: String
 }
 
+struct BaseResponse: Codable {
+    let message: String?
+}
+
 struct MovieResponse: Codable {
     let id: String
     let title: String
@@ -59,7 +63,7 @@ class APIManager {
         }
         
         var request = URLRequest(url: url)
-        request.http_method = method
+        request.httpMethod = method
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
         // Si tienes un Token guardado (ej. UserDefaults), inyéctalo aquí:
@@ -104,7 +108,7 @@ class APIManager {
     func addFavorite(api_id: Int, title: String, poster_url: String) async throws -> Bool {
         if APIConfig.use_real_api {
             let body: [String: Any] = ["api_id": api_id, "title": title, "poster_url": poster_url]
-            let _: [String: Any] = try await request(endpoint: "/favorites/", method: "POST", body: body)
+            let _: BaseResponse = try await request(endpoint: "/favorites/", method: "POST", body: body)
             return true
         } else {
             try await Task.sleep(nanoseconds: 500_000_000)
@@ -114,7 +118,7 @@ class APIManager {
     
     func removeFavorite(api_id: Int) async throws -> Bool {
         if APIConfig.use_real_api {
-            let _: [String: Any] = try await request(endpoint: "/favorites/\(api_id)", method: "DELETE")
+            let _: BaseResponse = try await request(endpoint: "/favorites/\(api_id)", method: "DELETE")
             return true
         } else {
             try await Task.sleep(nanoseconds: 500_000_000)
